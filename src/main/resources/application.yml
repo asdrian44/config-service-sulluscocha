@@ -11,6 +11,8 @@ server:
 
 
 eureka:
+  instance:
+    hostname: ${APP_NAME}.heroku.com
   client:
     healthcheck:
       enabled: true
