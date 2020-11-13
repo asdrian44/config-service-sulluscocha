@@ -9,4 +9,4 @@ eureka:
     service-url:
       defaultZone: https://eureka-server-spring.herokuapp.com/eureka
 server:
-  port: ${PORT}
+  port: 0
