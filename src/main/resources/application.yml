@@ -1,12 +1,10 @@
-
-
 eureka:
   instance:
-    non-secure-port: 80
+    nonSecurePort: 80
   client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
       defaultZone: https://eureka-server-spring.herokuapp.com/eureka
 server:
   port: 0
@@ -14,3 +12,4 @@ server:
 spring:
   application:
     name: config-server
+
