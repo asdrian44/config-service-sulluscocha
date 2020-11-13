@@ -2,7 +2,6 @@
 
 eureka:
   instance:
-    hostname: https://config-sulluscocha.herokuapp.com/
     non-secure-port: 80
   client:
     fetch-registry: true
