@@ -12,7 +12,7 @@ server:
 
 eureka:
   instance:
-    hostname: ${APP_NAME}.heroku.com
+    hostname: config-sulluscocha.heroku.com
   client:
     healthcheck:
       enabled: true
