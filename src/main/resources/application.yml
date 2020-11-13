@@ -10,5 +10,7 @@ server:
 
 eureka:
   client:
+    healthcheck:
+      enabled: true
     serviceUrl:
-      defaultZone: https://eureka-server-spring.herokuapp.com/eureka/
+      defaultZone: https://eureka-server-spring.herokuapp.com/eureka
