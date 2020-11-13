@@ -1,23 +1,12 @@
-spring:
-  cloud:
-    discovery:
-      enabled: true
-    config:
-      server:
-        git:
-          uri: https://github.com/asdrian44/configserver
-server:
-  port: 0
 
 
 eureka:
   instance:
-    hostname: config-sulluscocha.heroku.com
+    hostname: https://config-sulluscocha.herokuapp.com/
   client:
-    healthcheck:
-      enabled: true
-    serviceUrl:
-      defaultZone: https://eureka-server-spring.herokuapp.com/eureka/
     fetch-registry: true
     register-with-eureka: true
-
+    service-url:
+      defaultZone: https://eureka-server-spring.herokuapp.com/eureka
+server:
+  port: ${PORT}
